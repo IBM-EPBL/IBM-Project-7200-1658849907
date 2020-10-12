@@ -19,25 +19,26 @@
     <div class="container">
         <div class="head-section">
             <header>
-                <div class="logo">
+                <div class="logo" style="display:flex; flex-direction:row">
                     <a href="#">
-                        <img src="https://abu19cs.github.io/Map-Project-Hack/Static/Map-logo.png" width="5%" alt="" class="logo-img">
+                        <img src="https://abu19cs.github.io/Map-Project-Hack/Static/Map-logo.png" width="5%" alt="" class="logo-img" style="padding:0;margin:0;">
                     </a>
+                    <input type="text" placeholder="Search.." style="border-radius:20px; height: 40px; margin-top:25px; width:30%">
                 </div>
                 <div class="nav-links">
                     <a href="#1st">HOME</a>
                     <a href="#2nd">ABOUT</a>
                     <a href="#3rd">CONTACT</a>
-                    <a href="#4th">SEARCH</a>
+                    
+                    <!-- <a href="#4th">SEARCH</a> -->
                 </div>
             </header>
         </div>
        
 
         <div class="content-container one" id="1st">
-            <section class="content2">
+            <section class="content1">
                 <article>
-                     <h1> <br> <br> <br> <br><br><br><br> <br><br> <br></h1>
                     “Travel is the main thing you purchase that makes you more extravagant”. 
                 </article>
             </section>
@@ -55,20 +56,38 @@
                 </article>
             </section>
             <div class="image2">
-                <img src="https://image.freepik.com/free-vector/about-us-website-banner-concept-with-thin-line-flat-design_56103-96.jpg" width="25%" alt="" class="image2">
+                <img src="img/computer.png">
             </div>
         </div>
 
         <div class="content-container three" id="3rd">
-           <div class="image2">
-                <img src="https://image.freepik.com/free-vector/flat-contact-us-background_23-2148179809.jpg">
-            </div>
-            <section class="content-container">
-                <script type="text/javascript" src="https://form.jotform.com/jsform/202853750927057"></script>
+           <section class="content2">
+                <article>
+                    <h1> CONTACT US </h1>
+                    <div id="after_submit"></div>
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <label class="required" for="name">Your name:</label><br />
+                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                        <span id="name_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                        <label class="required" for="email">Your email:</label><br />
+                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                        <span id="email_validation" class="error_message"></span>
+                    </div>
+                    <div class="row">
+                        <label class="required" for="message">Your message:</label><br />
+                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                        <span id="message_validation" class="error_message"></span>
+                    </div>
+                        
+                        <input id="submit_button" type="submit" value="Submit" />
+                    </form> 
+                </article>
             </section>
-            <br><br>
-            <div class="image2">
-                <img src="https://image.freepik.com/free-vector/flat-contact-us-background_23-2148179809.jpg">
+            <div class="image2" style="margin:0;width:50%;height:fit-content;">
+                <img src="img/girl.png" style="margin:-80px 0 0 0; padding:0;">
             </div>
         </div>
 
@@ -83,10 +102,11 @@
             </div>
             </form>
             </article>
-          </section>
-         <div class="image2">
-                <img src="https://image.freepik.com/free-vector/geographic-location-system_24877-52111.jpg">
+            <div class="image2" >
+                <img src="img/pin.png" style="margin:0;width:20%;height:20%;">
          </div>
+          </section>
+         
         </div>
 
     </div>
