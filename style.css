@@ -5,27 +5,27 @@
 }
 
 body{
-    width:98vw;
-    
-}
+    width: 99vw;
+    background-color: white;
 
+}
 .container {
-    width:fit-content;
-    /* height:98vh; */
+    width: 100%;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: larger;
-    margin: 25px 25vw;
-    
+    font-weight: 500;
+    font-style: normal;
+    color: black;
 }
 
 .head-section {
     width : 100%;
-    height: fit-content;
-    background-image: linear-gradient(to top, #2a559e 0%, #00008b 100%);
-    padding: 0 4px;
-    color:#1d4c9e;
-    position: absolute;
+    height: 85px;
+    background-image: linear-gradient(to top,#008B8B 0%, #20B2AA 100%);
+    margin-top: 0;
+    padding: 4px;
+    position: static;
 }
 
 .logo-img {
@@ -42,7 +42,8 @@ body{
 a{
     padding: 10px;
     text-decoration: none;
-    color :  #4e4376 ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color :  #e1dfeb ;
 }
 
 .search-input {
@@ -71,11 +72,12 @@ a{
     margin-left: -14px;
 }
 
-.png-image {
-    height: 450px;
-    width: 450px;
-    float: left;
-    margin: 25px;
+.jpg-image {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
 
 div.content-imagehome {
@@ -92,8 +94,19 @@ div.content-imagehome {
     width: 400px;
     margin: 25px;
 }
+.one{
+    background-image: url("https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM0NjEwfQ&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    display: block;
+    border: 3px solid #20B2AA;
+}
 
 .content-container {
+    width: 100%;
     height: 500px;
     padding: 10px;
 }
@@ -115,6 +128,10 @@ div.content-imagehome {
     word-spacing: 10px;
     line-height: 35px;
 }
+* {
+    box-sizing: border-box;
+  }
+
 
 @media screen and (max-width: 1088px) {
     .content article {
@@ -135,7 +152,7 @@ div.content-imagehome {
         margin-top: 220px;
     }
     .head-section {
-        width: 99vw;
+        width: 100%;
     }
     .content2 article {
         margin-top: 391px;
@@ -158,4 +175,14 @@ div.content-imagehome {
     line-height: 35px;
     word-spacing: 10px;
 }
-
+.footer   {
+    background: transparent url(../images/ab3_circle_footer.png) no repeat scroll left bottom;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom:4px ;
+     }

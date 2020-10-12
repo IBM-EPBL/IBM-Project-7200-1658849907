@@ -1,123 +1,50 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="">
     <meta name="author" content="">
     <title>Most Popular site for choosing right way to travel</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/f96082f2f8.js"></script>
     <link rel="icon" href="tab-logo.svg">
-    <link rel="javascript" href="dropdown.js">
-    <style>
-        .overlay {
-            height: 0%;
-            width: 100%;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0, 0.9);
-            overflow-y: hidden;
-            transition: 0.5s;
-          }
-          
-          .overlay-content {
-            position: relative;
-            top: 25%;
-            width: 100%;
-            text-align: center;
-            margin-top: 30px;
-          }
-          
-          .overlay a {
-            padding: 8px;
-            text-decoration: none;
-            font-size: 36px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-          }
-          
-          .overlay a:hover, .overlay a:focus {
-            color: #f1f1f1;
-          }
-          
-          .overlay .closebtn {
-            position: absolute;
-            top: 20px;
-            right: 45px;
-            font-size: 60px;
-          }
-          
-          @media screen and (max-height: 450px) {
-            .overlay {overflow-y: auto;}
-            .overlay a {font-size: 20px}
-            .overlay .closebtn {
-            font-size: 40px;
-            top: 15px;
-            right: 35px;
-            }
-          }
-    </style>
+
 </head>
 <body>
-     
-    <div class="overlay" id="myNav">
-           
-                
-
-  <!-- Button to close the overlay navigation -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                   
-  <!-- Overlay content -->
-                        <div class="overlay-content">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
-
-                        </div>
-
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()" style="background-color:black">
-                    <img src="https://abu19cs.github.io/Map-Project-Hack/Static/Map-logo.png" width="5%" alt="" class="logo-img">
-                    <div style="color:black;">&#9776;</div></span>
-
-<!-- Use any element to open/show the overlay navigation menu -->
-                    
-
+    <div class="container">
+        <div class="head-section">
+            <header>
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://abu19cs.github.io/Map-Project-Hack/Static/Map-logo.png" width="5%" alt="" class="logo-img">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="#1st">HOME</a>
+                    <a href="#2nd">ABOUT</a>
+                    <a href="#3rd">CONTACT</a>
+                    <a href="#4th">SEARCH</a>
+                </div>
+            </header>
         </div>
-        <br><br>
-        <br><br><br><br>        
-        <div class="container">
-        <section class="content-container" id="1st">
-           <div class="content2">
-                <article>
-                     <h1> HOME </h1>
-                    “Travel is the main thing you purchase that makes you more extravagant”. 
-                    We provide the best information to the people about the approx travelling fare along with the 
-                    transportation mode.
-                    <br>
-                    Our objective is to prevent the cheating fares.
-                    <div class="logo">
-                        <a href="#">
-                            <img src="https://abu19cs.github.io/Map-Project-Hack/Static/Map-logo.png" width="5%" alt="" class="logo-img">
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <div class="image2">
-                <img src="https://image.freepik.com/free-vector/travel-background-with-tourist-decorative-items_23-2147618609.jpg" width="30%" alt="" class="image2">
-            </div>
-        </section>
        
-        <section class="content-container" id="2nd">
-            <div class="content2">
+
+        <div class="content-container one" id="1st">
+            <section class="content2">
+                <article>
+                     <h1> <br> <br> <br> <br><br><br><br> <br><br> <br></h1>
+                    “Travel is the main thing you purchase that makes you more extravagant”. 
+                </article>
+            </section>
+        </div>
+       
+        <div class="content-container two" id="2nd">
+            <section class="content2">
                 <article>
                      <h1> ABOUT US </h1>
                     “Travel is the main thing you purchase that makes you more extravagant”. 
@@ -126,44 +53,27 @@
                     <br>
                     Our objective is to prevent the cheating fares.
                 </article>
-            </div>
+            </section>
             <div class="image2">
                 <img src="https://image.freepik.com/free-vector/about-us-website-banner-concept-with-thin-line-flat-design_56103-96.jpg" width="25%" alt="" class="image2">
             </div>
-        </section>
+        </div>
 
-        <section class="content-container" id="3rd">
-            <div class="content2">
-                <article>
-                    <h1> CONTACT US </h1>
-                    <div id="after_submit"></div>
-                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-                    <div class="row">
-                        <label class="required" for="name">Your name:</label><br />
-                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-                        <span id="name_validation" class="error_message"></span>
-                    </div>
-                    <div class="row">
-                        <label class="required" for="email">Your email:</label><br />
-                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-                        <span id="email_validation" class="error_message"></span>
-                    </div>
-                    <div class="row">
-                        <label class="required" for="message">Your message:</label><br />
-                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-                        <span id="message_validation" class="error_message"></span>
-                    </div>
-                        
-                        <input id="submit_button" type="submit" value="Submit" />
-                    </form> 
-                </article>
+        <div class="content-container three" id="3rd">
+           <div class="image2">
+                <img src="https://image.freepik.com/free-vector/flat-contact-us-background_23-2148179809.jpg">
             </div>
+            <section class="content-container">
+                <script type="text/javascript" src="https://form.jotform.com/jsform/202853750927057"></script>
+            </section>
+            <br><br>
             <div class="image2">
                 <img src="https://image.freepik.com/free-vector/flat-contact-us-background_23-2148179809.jpg">
             </div>
-        </section>
+        </div>
 
-        <section class="content-container" id="4th">
+        <div class="content-container four" id="4th">
+          <section>
            <article>
            <h1> SEARCH </h1>
            <form action="https://abu19cs.github.io/Map-project/display.html" class="search">
@@ -171,23 +81,22 @@
                 <img src="tab-logo.svg" alt="" class="logo-class">
                 <input type="text" name="search" placeholder="Search Location...">
             </div>
-           </form>
-        </article>
+            </form>
+            </article>
+          </section>
          <div class="image2">
                 <img src="https://image.freepik.com/free-vector/geographic-location-system_24877-52111.jpg">
-            </div>
-        </section>
-    </div>
+         </div>
+        </div>
 
-    <script>
-        function openNav() {
-            document.getElementById("myNav").style.height = "100%";
-          }
-          
-          /* Close */
-          function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
-          }
-    </script>
+    </div>
+    <div class = "footer">
+      <address>
+        Postal Address: Door No.05,nehru Street,<br> Chennai,TamilNadu.
+      </address>
+      <p>Copyright © 2020 All rights reserved.</p>
+      <SocialButtons />
+    </div>
 </body>
+
 </html>
