@@ -26,11 +26,14 @@ body{
 .head-section {
     width : 100%;
     height: 85px;
-    background-image: linear-gradient(to top,#008B8B 0%, #20B2AA 100%);
+    background-image: linear-gradient(to top,#008B8B 0%, hsl(177, 70%, 41%) 100%);
     margin-top: 0;
     padding: 4px;
     position: static;
 }
+.clearfix {
+    overflow: auto;
+  }
 
 .logo-img {
     margin : 9px;
@@ -49,6 +52,7 @@ a{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color :  #e1dfeb ;
 }
+
 
 .search-input {
     width: 400px;
@@ -106,7 +110,12 @@ div.content-imagehome {
     font-size: larger;
     text-align: center;
     display: block;
-    border: 2px solid #20B2AA;
+     border: 2px solid #20B2AA;
+}
+.three{
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content-container {
@@ -121,6 +130,21 @@ div.content-imagehome {
     padding: 30px;
     margin-left: 80px;
 }
+  
+
+  .column {
+    float: left;
+    width: 33.33%;
+    height: 33.33%;
+    padding: 2px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .content article {
     width: 700px;
@@ -163,7 +187,9 @@ div.content-imagehome {
     .head-section {
         width: 100%;
     }
+    
 }
+
 
 .image2 img {
     width: 25%;
@@ -183,6 +209,7 @@ div.content-imagehome {
      
     padding-top: 4%;
 }
+
 .content1 article {
     width: 700px;
     height: 50px;
@@ -193,7 +220,8 @@ div.content-imagehome {
     padding-top: 25%;
 }
 .footer   {
-    background: transparent url(../images/ab3_circle_footer.png) no repeat scroll left bottom;
+    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700462287.jpg");
+    background-repeat: no-repeat;
     margin: auto;
     width: 100%;
     position: relative;
