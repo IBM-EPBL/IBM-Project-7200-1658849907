@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,64 +10,64 @@
     <meta name="keywords" content="">
     <meta name="author" content="">
     <title>Most Popular site for choosing right way to travel</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="https://kit.fontawesome.com/f96082f2f8.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="tab-logo.svg">
 
 </head>
 <body>
-    <div class="container">
-        <div class="head-section">
-            <header>
+    <div class="container" style="position:fixed; top:0">
+            <header class="header" id="HeaDer">
                 <div class="logo" style="display:flex; flex-direction:row">
                     <a href="#">
                         <img src="https://abu19cs.github.io/Map-Project-Hack/Static/Map-logo.png" width="5%" alt="" class="logo-img" style="padding:0;margin:0;">
                     </a>
-                    <input type="text" placeholder="Search.." style="border-radius:20px; height: 40px; margin-top:25px; width:30%">
+                    <form action="https://abu19cs.github.io/Map-project/display.html" class="search" style="border-radius:20px; height: 40px; margin-top:25px; width:30%"><input type="text" placeholder="Search.."
+                         style="border-radius:20px; height: 100%; width:100%"></form>
                 </div>
                 <div class="nav-links">
                     <a href="#1st">HOME</a>
                     <a href="#2nd">ABOUT</a>
                     <a href="#3rd">CONTACT</a>
-                    <a href="#4th">SEARCH</a>
+                    
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
                     
                     <!-- <a href="#4th">SEARCH</a> -->
                 </div>
             </header>
-        </div>
-       
+        
+        </div>   
+        <div class="container">
 
-        <div class="content-container one" id="1st">
-            <section class="content1">
-                <article>
+        <div class="content-container one" id="1st" style="padding-top:35%;">
+            <article class="content1">
+                
                     “Travel is the main thing you purchase that makes you more extravagant”. 
-                </article>
-            </section>
+                
+            </article>
         </div>
        
-        <div class="content-container two" id="2nd">
-            <section class="content2">
-                <article>
-                     <h1> ABOUT US </h1> 
+        <div class="content-container two" id="2nd" style="">
+            <div class="content2" style="width:50%">
+                     <h1> ABOUT US </h1>
+                     <p >
+                    “Travel is the main thing you purchase that makes you more extravagant”. 
                     We provide the best information to the people about the approx travelling fare along with the 
-                    transportation mode.
-                    <br>
-                    Our objective is to prevent the cheating fares.
-                    
-                    
-                </article>
-            </section>
-            <div class="image2">
+                    transportation mode. Our objective is to prevent the cheating fares.
+                     </p>
+            </div>
+            <div class="image2" style="width:50%">
                 <img src="img/computer.png">
             </div>
         </div>
-        
-        
+
         <div class="content-container three" id="3rd">
            <section class="content2">
-
-                <article>
+                
                     <h1> CONTACT US </h1>
                     <div id="after_submit"></div>
                     <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
@@ -86,42 +89,14 @@
                         
                         <input id="submit_button" type="submit" value="Submit" />
                     </form> 
-                </article>
+                
             </section>
-             <div class="image2">
-                <img src="https://www.tipperarycu.ie/wp-content/uploads/2019/06/follow-us-Social-Media-Icons.jpg" width="25%" alt="" class="image2"style="margin:0;width:35%;height:35%;" >
-            </div>
             <div class="image2" style="margin:0;width:50%;height:fit-content;">
                 <img src="img/girl.png" style="margin:-80px 0 0 0; padding:0;">
             </div>
         </div>
-    
 
-        <div class="content-container four" id="4th">
-          <section>
-           <article>
-           <h1> SEARCH </h1>
-           <form action="https://abu19cs.github.io/Map-project/display.html" class="search">
-            <div class="search-input">
-                <img src="tab-logo.svg" alt="" class="logo-class">
-                <input type="text" name="search" placeholder="Search Location...">
-            </div>
-            </form>
-            </article>
-            <div class ="row">
-                <div class="column">
-                    <img src="https://www.holidify.com/images/tooltipImages/PONDICHERRY.jpg" alt="" style="width:30%">
-                </div>
-                <div class="column">
-                    <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2015/07/Beach-in-Tranquebar.jpg" alt="" style="width:30%">
-                </div>
-                <div class="column">
-                    <img src="https://static.toiimg.com/photo/64191406.cms" alt="" style="width:30%">
-                </div>
-            <div>
-          </section>
-         
-        </div>
+        
 
     </div>
     <div class = "footer">
@@ -131,6 +106,16 @@
       <p>Copyright © 2020 All rights reserved.</p>
       <SocialButtons />
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("HeaDer");
+          if (x.className === "header") {
+            x.className += " responsive";
+          } else {
+            x.className = "header";
+          }
+        }
+        </script>
 </body>
 
 </html>
