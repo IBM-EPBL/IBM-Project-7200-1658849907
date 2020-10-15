@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@900&display=swap');
 html{
     width: 98.9vw;
     scroll-behavior: smooth;
@@ -6,7 +7,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Vollkorn', serif;
 }
 
 body{
@@ -252,13 +253,43 @@ header .icon {
     text-align: center; 
     align-items:center;
 }
+.three{
+    display:flex;
+    flex-direction:row;   
+    text-align: center; 
+    align-items:center;
+    
+}
+.three .content2{
+    margin:0;width:50%;height:fit-content;
+}
+.three .image2{
+    margin:0;padding-left:25%;height:fit-content;
+}
 @media screen and (max-width:600px) {
+    *{
+        font-size:relative;
+    }
     .two{
         display:flex;
         flex-direction:column;
         text-align: center;
         align-items:center; 
     }
+    .three{
+        display:flex;
+        flex-direction:column;
+        text-align: center;
+        align-items:center; 
+        margin:0;height:fit-content;
+        
+    }
+    .three .image2{
+    height:fit-content;    
+    width:auto;
+    padding:0;
+    padding-top: 10px;
+}
     .content2{
         text-align: center; 
     }
