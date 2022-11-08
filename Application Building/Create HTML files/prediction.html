@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>    
+<style>
+h1{
+background-color:purple;
+color:white;
+}
+h2{
+background-color:purple;
+color:white;
+}
+</style>
+<p><h1><center>Chronic Kidney Disease</center>
+<center>A Machine Learning App build with Flask</center></h1></p>
+</head>
+<body>
+<form>
+  <center><label for="urea">Enter blood_urea:</label><input type="textarea"></center><br>
+  <center><label for="urea">Enter blood Glucose Level:</label><input type="textarea"></center><br>
+</form>
+<center><form action="/action_page.php">
+  <label for="anaemic">Select anaemic or not:</label>
+  <select id="anaemic" name="anaemic">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</form></center><br>
+<center><form action="/action_page.php">
+  <label for="Coronary Artery">Select Coronary Artery disease or not:</label>
+  <select id="Coronary Artery" name="Coronary Artery">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</form></center><br>
+<center><form action="/action_page.php">
+  <label for="pus">Select pus cells or not:</label>
+  <select id="pus" name="pus">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</form></center><br>
+<center><form action="/action_page.php">
+  <label for="rbc">Select red blood cells level:</label>
+  <select id="rbc" name="rbc">
+    <option value="a">above 13 g/dl</option>
+    <option value="b">10-13 g/dl</option>
+    <option value="c">below 10 g/dl</option>
+  </select>
+</form></center><br>
+<center><form action="/action_page.php">
+  <label for="diabetes">Select diabetes mellituse or not:</label>
+  <select id="diabetes " name="diabetes">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</form></center><br>
+<center><form action="/action_page.php">
+  <label for="pedal edema">Select pedal edema or not:</label>
+  <select id="pedal edema" name="pedal edema">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select>
+</form></center><br>
+<a href="predictionreport.html"><form>
+<center><input type="button" value="Predict"></center>
+</form></a>
+
+</body>
+</html>
